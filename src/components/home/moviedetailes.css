@@ -1,0 +1,35 @@
+
+.body{
+    margin-top:50px
+}
+.detailes ul li{
+    padding-bottom: 20px;
+    border:1px solid #ddd;
+    padding-left: 20px;
+
+}
+.detailes ul li span:first-child{
+    font-size: 20px;
+    font-weight: bold;
+}
+.moive-title{
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 30px !important;
+}
+.about{
+    background: #343A40;
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+}
+.about h1{
+    font-size: xx-large;
+    font-weight: bold;
+}
+.about p{
+    font-size: large;
+}
+.about a{
+    margin-left:10px ;
+}
