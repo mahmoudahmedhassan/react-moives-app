@@ -1,6 +1,5 @@
-import {SEARCH_MOVIES,FETCH_MOVIES,FETCH_MOVIE,LOADING} from '../typeAction/type'
-import APIKey from '../../reducers/Apikye'
-import axios from 'axios'
+import {SEARCH_MOVIES,FETCH_MOVIES,FETCH_MOVIE,LOADING} from '../typeAction/type';
+import axios from 'axios';
 
 export const searchMovies =(text)=>dispatch =>{
     dispatch({

@@ -1,18 +1,25 @@
 import { React, useEffect } from "react";
 import { connect } from "react-redux";
-import { fetchMovie,loading } from "../../reducers/actions/actions";
+// import { fetchMovie,loading } from "../../reducers/actions/actions";
 import { Link } from "react-router-dom";
 import "./moviedetailes.css";
 import Spinner from "./Spinner";
+import { fetchMovie, loading as loadingDispatch } from '../../reducers/actions/actions'
+
 
 function Moviedetails(props) {
   useEffect(() => {
-    props.fetchMovie(props.match.params.id);
-     props.loading()
-
+    // props.fetchMovie(props.match.params.id);
+    //  props.loading()
+    props.loadingDispatch()
+    props.fetchMovie(props.match.params.id)
   }, []);
 
+  
+  
+
   const moviedetailes=(
+
 
     <div className="body">
       <div className="container">
@@ -90,5 +97,8 @@ const mapStateToProps = (state) => ({
   movie: state.movie,
   loading: state.loading,
 });
+export default connect(mapStateToProps, { fetchMovie, loadingDispatch })(Moviedetails)
 
-export default connect(mapStateToProps, { fetchMovie,loading })(Moviedetails);
+
+// export default connect(mapStateToProps, { fetchMovie,loading })(Moviedetails);
+ 

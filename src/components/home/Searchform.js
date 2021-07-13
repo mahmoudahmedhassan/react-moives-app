@@ -8,13 +8,12 @@ function Searchform(props) {
 
     const onSubmit=(e)=>{
         e.preventDefault();
-        props.fetchMovies(props.text)
-        props.loading()
+        props.fetchMovies(props.text);
+        props.loading();
 
-    }
+     }
     const handelChange =(e)=>{
-        props.searchMovies(e.target.value)
-
+        props.searchMovies(e.target.value);
     }
 
     return (
@@ -33,8 +32,7 @@ function Searchform(props) {
                </Button>
                 </form>
              </Jumbotron>
-
-        </div>
+         </div>
     )
 }
 const mapStateToProps =(state)=>({

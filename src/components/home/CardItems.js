@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 function CardItems({ movie }) {
   return (
 
-            <div className='col-sm-12 col-md-6 col-lg-3'>
+            <div className='col-sm-12 col-md-6 col-lg-3' style={{marginBottom:'30px'}}>
               <div className="card card-body bg-dark text-center h-100">
               <img
                 className="w-100 mb-2"
