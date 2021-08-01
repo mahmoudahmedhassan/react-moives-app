@@ -17,13 +17,6 @@ function Header() {
 
                 </div>
            </Navbar>
-
-
- 
-   
-    
- 
-   
  
         </div>
     )

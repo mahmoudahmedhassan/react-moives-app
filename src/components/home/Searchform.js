@@ -1,4 +1,5 @@
 import React from 'react';
+import './searchform.css'
 import Jumbotron from 'react-bootstrap/Jumbotron';
 import {Form,Button} from 'react-bootstrap';
 import {searchMovies,fetchMovies,loading} from '../../reducers/actions/actions';
@@ -18,8 +19,8 @@ function Searchform(props) {
 
     return (
         <div>
-            <Jumbotron className='container text-center' style ={{marginTop:'50px'}}>
-                <h1 style ={{padding:'50px'}}> Search for a movie ,TV series ..</h1>
+            <Jumbotron className='container text-center'>
+                <h1 style ={{padding:'50px'}} className='title'> Search for a movie ,TV series ..</h1>
                 <form id='searchForm' onSubmit={onSubmit}>
                 <Form.Control 
                 type="text" 

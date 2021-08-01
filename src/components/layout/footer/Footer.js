@@ -6,7 +6,7 @@ function Footer() {
     return (
         <div>
             <div className={classe.footer}>
-                <p>Developed By:<span style={{color:"yellow"}}>Yaser AlAzem</span>, Using  React JS <FaReact/> & Redux JS integrated with external movies data API <a href="">OMDB</a></p>
+                <p>Developed By:<span style={{color:"yellow"}}>Mahmoud Ahmed</span>, Using  React JS <FaReact/> & Redux JS integrated with external movies data API <a href="">OMDB</a></p>
             </div>
 
             

@@ -2,4 +2,10 @@
     font-size: 35px;
     color: #fff;
 } 
+@media (max-width: 575.98px) {
+    .Span{
+        font-size: 20px;
+        color: #fff;
+    }
+}
  
