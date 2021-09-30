@@ -14,13 +14,9 @@ function Moviedetails(props) {
     props.loadingDispatch()
     props.fetchMovie(props.match.params.id)
   }, []);
-
-  
-  
-
-  const moviedetailes=(
-
-
+ 
+   const moviedetailes=(
+ 
     <div className="body">
       <div className="container">
         <div className="row">
@@ -84,7 +80,7 @@ function Moviedetails(props) {
     </div>
 
   )
-  const content = props.loading ? <Spinner/> :moviedetailes
+  const content = props.loading ? <Spinner/> : moviedetailes
 
   return (
       <div>

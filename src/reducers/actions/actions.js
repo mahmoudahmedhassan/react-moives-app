@@ -7,6 +7,7 @@ export const searchMovies =(text)=>dispatch =>{
         payload :text
     })
 }
+
 export const loading =()=>dispatch =>{
   dispatch({
       type :LOADING

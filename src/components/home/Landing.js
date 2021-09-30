@@ -9,6 +9,7 @@ function Landing({loading}) {
     return (
         <div>
             <Searchform />
+            
             {loading ? <Spinner/>: <Moviescontainer />}
         </div>
     )

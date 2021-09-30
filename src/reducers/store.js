@@ -6,6 +6,6 @@ import reducer from './reducer/searchReducer'
 
 const store = createStore(reducer,
     composeWithDevTools(applyMiddleware(thunk))
-    )
+)
 
 export default store

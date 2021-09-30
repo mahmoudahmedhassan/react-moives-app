@@ -17,6 +17,7 @@ function App() {
         <div className="App">
           <Header />
           <Route exact path="/" component={Landing}/>
+          
           <Route exact path="/Moviedetails/:id"  component ={Moviedetails}/>
           {/* <Landing /> */}
           <Footer />

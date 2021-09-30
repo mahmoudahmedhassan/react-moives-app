@@ -5,7 +5,6 @@ const initialState ={
     movies: [],
     movie:[],
     loading:false
-    
 }
 
 const reducer = (state =initialState,action)=>{
@@ -13,7 +12,7 @@ const reducer = (state =initialState,action)=>{
           case SEARCH_MOVIES:
           return{
               ...state,
-              text:action.payload ,
+              text:action.payload,
               loading:false
           }
           case FETCH_MOVIES:
@@ -27,7 +26,6 @@ const reducer = (state =initialState,action)=>{
                   ...state,
                   movie:action.payload,
                   loading:false
-
               }
 
           case LOADING:
@@ -36,9 +34,9 @@ const reducer = (state =initialState,action)=>{
                      loading:true
   
                 }
-            
-    };
 
-    return state
- }
+                default : return state
+     };
+
+  }
 export default reducer
