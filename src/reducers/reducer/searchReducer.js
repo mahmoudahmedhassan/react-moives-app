@@ -32,7 +32,6 @@ const reducer = (state =initialState,action)=>{
              return{
                     ...state,
                      loading:true
-  
                 }
 
                 default : return state

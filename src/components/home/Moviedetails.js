@@ -8,15 +8,22 @@ import { fetchMovie, loading as loadingDispatch } from '../../reducers/actions/a
 
 
 function Moviedetails(props) {
-  useEffect(() => {
-    // props.fetchMovie(props.match.params.id);
-    //  props.loading()
-    props.loadingDispatch()
-    props.fetchMovie(props.match.params.id)
-  }, []);
  
+  // useEffect(() => {
+  //  props.loadingDispatch();
+  // props.fetchMovie(props.match.params.id);
+  //  }, []);
+
+  let fetchMovie = props.fetchMovie(props.match.params.id);
+  let loadingDispatch = props.loadingDispatch();
+
+   useEffect(() => {
+    fetchMovie()
+    loadingDispatch()
+     }, [fetchMovie,loadingDispatch]);
+    
    const moviedetailes=(
- 
+     
     <div className="body">
       <div className="container">
         <div className="row">
