@@ -9,18 +9,18 @@ import { fetchMovie, loading as loadingDispatch } from '../../reducers/actions/a
 
 function Moviedetails(props) {
  
-  // useEffect(() => {
-  //  props.loadingDispatch();
-  // props.fetchMovie(props.match.params.id);
-  //  }, []);
+  useEffect(() => {
+   props.loadingDispatch();
+   props.fetchMovie(props.match.params.id);
+   }, []);
 
-  let fetchMovie = props.fetchMovie(props.match.params.id);
-  let loadingDispatch = props.loadingDispatch();
+  // let fetchMovie = props.fetchMovie(props.match.params.id);
+  // let loadingDispatch = props.loadingDispatch();
 
-   useEffect(() => {
-    fetchMovie()
-    loadingDispatch()
-     }, [fetchMovie,loadingDispatch]);
+  //  useEffect(() => {
+  //   fetchMovie()
+  //   loadingDispatch()
+  //    }, [fetchMovie,loadingDispatch]);
     
    const moviedetailes=(
      
@@ -32,7 +32,8 @@ function Moviedetails(props) {
               <img
                 src={props.movie.Poster}
                 alt="poster"
-                className="img-thumbnail"
+                className="img-thumbnail img-poster"
+                
               />
             </div>
           </div>
@@ -68,20 +69,21 @@ function Moviedetails(props) {
         <div className="about">
           <h1>About</h1>
           <p>{props.movie.Plot}</p>
-          <div>
+          <div className='about-button'>
             <a
               href={"https://www.imdb.com/title/" + props.movie.imdbID}
               target="_blank"
               rel="noopener noreferrer"
-              className="btn btn-primary"
+              className="btn btn-primary view-details"
             >
               View on IMDB
             </a>
 
-            <Link to="/" className="btn btn-primary">
+            <Link to="/" className="btn btn-primary go-home">
               go to search page
             </Link>
           </div>
+
         </div>
       </div>
     </div>

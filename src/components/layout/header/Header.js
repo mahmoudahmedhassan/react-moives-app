@@ -10,7 +10,7 @@ function Header() {
             
             <Navbar bg="dark" variant="dark" >
                 <div className='container'>
-                <div>  <Link to= '/'><span className ={classes.Span}>MovieSeriesInfo</span></Link>  </div>
+                <div>  <Link to= '/' className='Movie_SeriesInfo'><span className ={classes.Span}>Movie SeriesInfo</span></Link>  </div>
                     <Navbar.Brand  >
                         <FaImdb className="d-inline-block align-top " size='5rem' color='yellow'  />
                     </Navbar.Brand>
